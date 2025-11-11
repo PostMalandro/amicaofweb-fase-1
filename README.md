@@ -4,7 +4,7 @@ Projeto simples em HTML puro, feito para a Fase 1 da disciplina de Fundamentos d
 A proposta é criar um site de petshop mostrando produtos e serviços básicos.
 
 # Como ver
-- Abra o arquivo "index.html" no navegador, ou acesse o link do GitHub Pages.
+- Abra o arquivo "index.html" no navegador, ou acesse o link do GitHub Pages: https://postmalandro.github.io/amicaofweb-fase-1/
 
 # O projeto possui
 - Cabeçalho com nome do petshop e menu de navegação.
