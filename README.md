@@ -12,4 +12,4 @@ A proposta é criar um site de petshop mostrando produtos e serviços básicos.
 - Serviços de banho e tosa com preços com e sem tele-busca.
 - Rodapé com autoria e informações de contato.
 
-Autor: Rodrigo Brandão Farias Mineiro - ADS - PUCRS
+Autor: Rodrigo Brandão Farias Mineiro - Curso de Análise e Desenvolvimento de Sistemas — PUCRS
