@@ -5,130 +5,394 @@
   <title>Amicão - Produtos e Serviços</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Rodrigo Brandão Farias Mineiro">
-  <meta name="description" content="Fase 1 - Fundamentos de Sistema Web | Site simples em HTML do petshop Amicão.">
+  <meta name="description" content="Projeto do petshop Amicão - Fase 2 de Fundamentos de Sistema Web (PUCRS).">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Amicão</h1>
-    <h2>Produtos e Serviços para seu Pet!</h2>
-    <p>Bem-vindo ao Amicão! Aqui seu pet encontra o melhor em produtos e cuidados.</p>
-    <nav>
-      <a href="#produtos">Produtos</a> |
-      <a href="#servicos">Serviços</a> |
-      <a href="#contato">Contato</a>
-    </nav>
-    <hr>
+  
+  <header class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Menu principal do site do petshop Amicão">
+    <div class="container">
+      <a class="navbar-brand" href="#topo">Amicão</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agendamento">Agendamento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="produtos">
-      <h2>Produtos</h2>
-
-      <h3>Acessórios</h3>
-      <table border="1" cellpadding="6">
-        <thead>
-          <tr><th>Foto</th><th>Nome</th><th>Descrição</th><th>Valor (R$)</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="imagens/coleira.png" alt="Coleira ajustável" width="140"></td>
-            <td>Coleira Ajustável</td>
-            <td>Nylon, fecho rápido. Tamanhos P/M/G.</td>
-            <td>39,90</td>
-          </tr>
-          <tr>
-            <td><img src="imagens/cama.png" alt="Cama para pets" width="140"></td>
-            <td>Cama Conforto</td>
-            <td>Cama lavável com base antiderrapante.</td>
-            <td>149,90</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Rações</h3>
-      <table border="1" cellpadding="6">
-        <thead>
-          <tr><th>Foto</th><th>Nome</th><th>Descrição</th><th>Valor (R$)</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="imagens/racao1.png" alt="Ração seca adultos 10kg" width="140"></td>
-            <td>Ração Cães Adultos 10 kg</td>
-            <td>Fórmula balanceada com vitaminas e minerais.</td>
-            <td>199,00</td>
-          </tr>
-          <tr>
-            <td><img src="imagens/racao2.png" alt="Ração filhotes 2kg" width="140"></td>
-            <td>Ração Cães Filhotes 2 kg</td>
-            <td>Com DHA e proteínas para crescimento saudável.</td>
-            <td>79,90</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Higiene e Limpeza</h3>
-      <table border="1" cellpadding="6">
-        <thead>
-          <tr><th>Foto</th><th>Nome</th><th>Descrição</th><th>Valor (R$)</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="imagens/tapete.png" alt="Tapete higiênico" width="140"></td>
-            <td>Tapete Higiênico (30 un)</td>
-            <td>Boa absorção e controle de odores.</td>
-            <td>59,90</td>
-          </tr>
-          <tr>
-            <td><img src="imagens/shampoo.png" alt="Shampoo neutro" width="140"></td>
-            <td>Shampoo Neutro 500 ml</td>
-            <td>pH balanceado, uso semanal.</td>
-            <td>24,90</td>
-          </tr>
-        </tbody>
-      </table>
+  <main id="topo">
+   
+    <section class="py-4 bg-light border-bottom">
+      <div class="container">
+        <h1 class="h2">Produtos e Serviços para seu Pet!</h1>
+        <p class="mb-1">Bem-vindo ao Amicão! Aqui seu pet encontra o melhor em produtos, higiene e cuidados.</p>
+        <p id="saudacao" class="fw-semibold"></p>
+      </div>
     </section>
 
-    <hr>
-
-    <section id="servicos">
-      <h2>Serviços</h2>
-      <p>Oferecemos banho e tosa para cães e gatos. O cliente pode escolher com ou sem tele-busca.</p>
-      <table border="1" cellpadding="6">
-        <thead>
-          <tr><th>Serviço</th><th>Descrição</th><th>Com tele-busca</th><th>Sem tele-busca</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Banho</td>
-            <td>Banho completo com produtos hipoalergênicos.</td>
-            <td>R$ 79,90</td>
-            <td>R$ 59,90</td>
-          </tr>
-          <tr>
-            <td>Tosa</td>
-            <td>Tosa higiênica ou padrão da raça.</td>
-            <td>R$ 99,90</td>
-            <td>R$ 79,90</td>
-          </tr>
-        </tbody>
-      </table>
+  
+    <section class="py-4">
+      <div class="container">
+        <h2 class="h4 mb-3">Destaques</h2>
+        <div id="carrosselAmicao" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de imagens do petshop Amicão">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrosselAmicao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrosselAmicao" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrosselAmicao" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/coleira.png" class="d-block w-100" alt="Coleira e acessórios para cães e gatos.">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-2">
+                <h3 class="h5">Acessórios</h3>
+                <p>Coleiras, camas e brinquedos para o dia a dia do seu pet.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/racao1.png" class="d-block w-100" alt="Saco de ração seca para cães.">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-2">
+                <h3 class="h5">Rações</h3>
+                <p>Opções de rações para diferentes idades e portes.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/tapete.png" class="d-block w-100" alt="Produtos de higiene para animais.">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-2">
+                <h3 class="h5">Higiene e limpeza</h3>
+                <p>Tapetes higiênicos, shampoos e itens para manter tudo limpo.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAmicao" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Slide anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrosselAmicao" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo slide</span>
+          </button>
+        </div>
+      </div>
     </section>
 
-    <hr>
+  
+    <section id="produtos" class="py-4 bg-light border-top border-bottom">
+      <div class="container">
+        <h2 class="h4 mb-3">Produtos</h2>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>E-mail: contato@amicao.com.br</p>
-      <p>Telefone/WhatsApp: (21) 99999-0000</p>
-      <p>Endereço: Rua Exemplo, 123 — RJ</p>
+        <h3 class="h5 mt-3">Acessórios</h3>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle">
+            <thead class="table-primary">
+              <tr><th>Foto</th><th>Nome</th><th>Descrição</th><th>Valor (R$)</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="imagens/coleira.png" alt="Coleira ajustável em nylon." class="img-thumbnail produtos-img"></td>
+                <td>Coleira Ajustável</td>
+                <td>Nylon com fecho rápido. Tamanhos P, M e G.</td>
+                <td>39,90</td>
+              </tr>
+              <tr>
+                <td><img src="imagens/cama.png" alt="Cama macia para pets." class="img-thumbnail produtos-img"></td>
+                <td>Cama Conforto</td>
+                <td>Cama lavável com base antiderrapante.</td>
+                <td>149,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="h5 mt-3">Rações</h3>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle">
+            <thead class="table-primary">
+              <tr><th>Foto</th><th>Nome</th><th>Descrição</th><th>Valor (R$)</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="imagens/racao1.png" alt="Ração seca para cães adultos." class="img-thumbnail produtos-img"></td>
+                <td>Ração Seca Adultos 10 kg</td>
+                <td>Fórmula balanceada com vitaminas e minerais.</td>
+                <td>199,00</td>
+              </tr>
+              <tr>
+                <td><img src="imagens/racao2.png" alt="Ração seca para filhotes." class="img-thumbnail produtos-img"></td>
+                <td>Ração Filhotes 2 kg</td>
+                <td>Com DHA e proteínas para crescimento saudável.</td>
+                <td>79,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="h5 mt-3">Higiene e Limpeza</h3>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle">
+            <thead class="table-primary">
+              <tr><th>Foto</th><th>Nome</th><th>Descrição</th><th>Valor (R$)</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="imagens/tapete.png" alt="Pacote de tapetes higiênicos para cães." class="img-thumbnail produtos-img"></td>
+                <td>Tapete Higiênico (30 un)</td>
+                <td>Boa absorção e controle de odores.</td>
+                <td>59,90</td>
+              </tr>
+              <tr>
+                <td><img src="imagens/shampoo.png" alt="Frasco de shampoo neutro para pets." class="img-thumbnail produtos-img"></td>
+                <td>Shampoo Neutro 500 ml</td>
+                <td>pH balanceado, indicado para uso semanal.</td>
+                <td>24,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="servicos" class="py-4">
+      <div class="container">
+        <h2 class="h4 mb-3">Serviços</h2>
+        <p>O Amicão oferece banho e tosa para cães e gatos. O cliente pode optar por tele-busca do pet ou levar diretamente ao petshop.</p>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle">
+            <thead class="table-primary">
+              <tr><th>Serviço</th><th>Descrição</th><th>Com tele-busca</th><th>Sem tele-busca</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Banho</td>
+                <td>Banho completo com produtos hipoalergênicos.</td>
+                <td>R$ 79,90</td>
+                <td>R$ 59,90</td>
+              </tr>
+              <tr>
+                <td>Tosa</td>
+                <td>Tosa higiênica ou padrão da raça.</td>
+                <td>R$ 99,90</td>
+                <td>R$ 79,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="cadastro" class="py-4 bg-light border-top border-bottom">
+      <div class="container">
+        <h2 class="h4 mb-3">Cadastro do cliente e do pet</h2>
+        <p class="mb-3">Preencha os dados abaixo para se cadastrar e facilitar futuros agendamentos.</p>
+
+        <form id="formCadastro" class="row g-3" aria-label="Formulário de cadastro do cliente e do pet">
+          <fieldset class="col-12 border rounded-3 p-3">
+            <legend class="float-none w-auto px-2 fs-6">Dados do cliente</legend>
+
+            <div class="col-md-6">
+              <label for="nomeCliente" class="form-label">Nome completo*</label>
+              <input type="text" id="nomeCliente" name="nomeCliente" class="form-control" placeholder="Ex.: Ana Silva" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cpf" class="form-label">CPF*</label>
+              <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Apenas números" required>
+            </div>
+
+            <div class="col-md-8">
+              <label for="endereco" class="form-label">Endereço*</label>
+              <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Rua, número e complemento" required>
+            </div>
+
+            <div class="col-md-4">
+              <label for="telefone" class="form-label">Telefone/WhatsApp*</label>
+              <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(DDD) 00000-0000" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail*</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="col-md-6">
+              <span class="form-label d-block">Sexo</span>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino">
+                <label class="form-check-label" for="sexoF">Feminino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino">
+                <label class="form-check-label" for="sexoM">Masculino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoO" value="Outro">
+                <label class="form-check-label" for="sexoO">Prefiro não informar</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="novidades" name="novidades">
+                <label class="form-check-label" for="novidades">
+                  Desejo receber novidades e promoções por e-mail.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="col-12 border rounded-3 p-3">
+            <legend class="float-none w-auto px-2 fs-6">Dados do pet</legend>
+
+            <div class="col-md-6">
+              <label for="nomePet" class="form-label">Nome do pet*</label>
+              <input type="text" id="nomePet" name="nomePet" class="form-control" placeholder="Ex.: Thor" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="especie" class="form-label">Espécie*</label>
+              <select id="especie" name="especie" class="form-select" required>
+                <option value="">Selecione</option>
+                <option value="Cachorro">Cachorro</option>
+                <option value="Gato">Gato</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="raca" class="form-label">Raça</label>
+              <input type="text" id="raca" name="raca" class="form-control" placeholder="Ex.: SRD, Poodle, Siamês...">
+            </div>
+
+            <div class="col-md-3">
+              <label for="idade" class="form-label">Idade (anos)</label>
+              <input type="number" id="idade" name="idade" class="form-control" min="0" max="30" placeholder="Ex.: 3">
+            </div>
+
+            <div class="col-md-3">
+              <span class="form-label d-block">Porte</span>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="porte" id="porteP" value="Pequeno">
+                <label class="form-check-label" for="porteP">Pequeno</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="porte" id="porteM" value="Médio">
+                <label class="form-check-label" for="porteM">Médio</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="porte" id="porteG" value="Grande">
+                <label class="form-check-label" for="porteG">Grande</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="vacinas" name="vacinas">
+                <label class="form-check-label" for="vacinas">
+                  Vacinas em dia
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar cadastro</button>
+          </div>
+
+          <div class="col-12">
+            <p id="mensagemCadastro" class="fw-semibold" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    
+    <section id="agendamento" class="py-4">
+      <div class="container">
+        <h2 class="h4 mb-3">Agendamento de serviço</h2>
+        <p class="mb-3">Escolha o serviço, a forma de atendimento, a data e o horário desejado.</p>
+
+        <form id="formAgendamento" class="row g-3" aria-label="Formulário de agendamento de banho ou tosa">
+          <div class="col-md-4">
+            <label for="servicoAg" class="form-label">Serviço*</label>
+            <select id="servicoAg" name="servicoAg" class="form-select" required>
+              <option value="">Selecione</option>
+              <option value="Banho">Banho</option>
+              <option value="Tosa">Tosa</option>
+            </select>
+          </div>
+
+          <div class="col-md-4">
+            <span class="form-label d-block">Forma de atendimento*</span>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="forma" id="formaTele" value="Tele-busca" required>
+              <label class="form-check-label" for="formaTele">Tele-busca</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="forma" id="formaLocal" value="Entrega no petshop" required>
+              <label class="form-check-label" for="formaLocal">Entrega no petshop</label>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <label for="dataAg" class="form-label">Data*</label>
+            <input type="date" id="dataAg" name="dataAg" class="form-control" required>
+          </div>
+
+          <div class="col-md-2">
+            <label for="horaAg" class="form-label">Horário*</label>
+            <input type="time" id="horaAg" name="horaAg" class="form-control" required>
+          </div>
+
+          <div class="col-12">
+            <label for="obsAg" class="form-label">Observações</label>
+            <textarea id="obsAg" name="obsAg" class="form-control" rows="2" placeholder="Ex.: pet idoso, usar shampoo hipoalergênico, etc."></textarea>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-success">Confirmar agendamento</button>
+          </div>
+
+          <div class="col-12">
+            <p id="resumoAgendamento" class="fw-semibold" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section id="contato" class="py-4 bg-light border-top">
+      <div class="container">
+        <h2 class="h4 mb-3">Contato</h2>
+        <p>E-mail: contato@amicao.com.br</p>
+        <p>WhatsApp: (21) 99999-0000</p>
+        <p>Endereço: Rua Exemplo, 123 — RJ</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <hr>
-    <p>© 2025 Amicão — Autor: Rodrigo Brandão Farias Mineiro. Fundamentos de Sistemas Web(PUCRS) — Fase 1.</p>
-    <nav>
-    </nav>
+  <footer class="py-3 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-1 mb-md-0">© 2025 Amicão — Autor: Rodrigo Brandão Farias Mineiro (ADS - PUCRS).</p>
+      <p class="mb-0">Projeto de estudos — Fase 2 (CSS, Bootstrap e JavaScript).</p>
+    </div>
   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
