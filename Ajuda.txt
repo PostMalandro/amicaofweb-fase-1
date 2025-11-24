@@ -1,0 +1,36 @@
+AJUDA DO SISTEMA - PETSHOP AMICÃO (FASE 2)
+
+Este arquivo foi escrito para explicar as funcionalidades do site.
+
+1) Página inicial e navegação
+- No topo da página existe um menu que leva para as seções de Produtos, Serviços, Cadastro, Agendamento e Contato.
+- Logo abaixo há um carrossel de imagens feito com Bootstrap, que mostra alguns destaques do petshop.
+- A mensagem de saudação muda de acordo com o horário em que o site é acessado (manhã, tarde ou noite).
+
+2) Produtos
+- A lista de produtos é dividida em três categorias: Acessórios, Rações e Higiene/Limpeza.
+- Cada categoria está em uma tabela com foto, nome, descrição e valor.
+- Todas as imagens possuem texto alternativo (atributo alt) para ajudar na acessibilidade.
+
+3) Serviços
+- São apresentados dois serviços principais: banho e tosa.
+- Para cada serviço o site mostra uma breve descrição e os valores com e sem tele-busca.
+
+4) Cadastro do cliente e do pet
+- O formulário de cadastro possui campos para os dados do cliente (nome, CPF, endereço, telefone, e-mail, sexo e interesse em receber novidades).
+- Em seguida aparecem os campos do pet (nome, espécie, raça, idade, porte e se as vacinas estão em dia).
+- Foram utilizados diferentes tipos de campos: texto, número, e-mail, checkbox, radio button, select, placeholders e campos obrigatórios (required).
+- Ao enviar o formulário, o JavaScript mostra uma mensagem simples confirmando o cadastro do cliente e do pet.
+
+5) Agendamento
+- O formulário de agendamento permite escolher o serviço (banho ou tosa), a forma de atendimento (tele-busca ou entrega no petshop), além da data e do horário desejados.
+- Também existe um campo para observações gerais sobre o pet.
+- Quando o formulário é enviado, o JavaScript monta um resumo com as informações digitadas e mostra a mensagem na própria página.
+
+6) Acessibilidade
+- Todas as imagens possuem atributo alt com uma descrição curta.
+- O carrossel e os formulários utilizam rótulos (label) associados aos campos.
+- Alguns textos dinâmicos (como mensagens de confirmação) possuem o atributo aria-live="polite" para ajudar leitores de tela.
+
+Autor: Rodrigo Brandão Farias Mineiro
+Disciplina: Fundamentos de Sistema Web (PUCRS)
