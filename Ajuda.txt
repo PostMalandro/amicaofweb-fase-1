@@ -1,6 +1,6 @@
 AJUDA DO SISTEMA - PETSHOP AMICÃO (FASE 2)
 
-Este arquivo foi escrito para explicar as funcionalidades do site.
+Arquivo escrito para explicar as funcionalidades do site.
 
 1) Página inicial e navegação
 - No topo da página existe um menu que leva para as seções de Produtos, Serviços, Cadastro, Agendamento e Contato.
@@ -29,7 +29,7 @@ Este arquivo foi escrito para explicar as funcionalidades do site.
 
 6) Acessibilidade
 - Todas as imagens possuem atributo alt com uma descrição curta.
-- O carrossel e os formulários utilizam rótulos (label) associados aos campos.
+- O carrossel e os formulários utilizam rótulos associados aos campos.
 - Alguns textos dinâmicos (como mensagens de confirmação) possuem o atributo aria-live="polite" para ajudar leitores de tela.
 
 Autor: Rodrigo Brandão Farias Mineiro
