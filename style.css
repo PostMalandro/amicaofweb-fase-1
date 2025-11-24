@@ -1,0 +1,14 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.produtos-img {
+  max-width: 120px;
+}
+
+#mensagemCadastro,
+#resumoAgendamento,
+#saudacao {
+  color: #0b5ed7;
+}
