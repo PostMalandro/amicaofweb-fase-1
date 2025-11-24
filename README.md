@@ -5,7 +5,7 @@ A proposta é criar um site de petshop mostrando produtos e serviços básicos.
 
 # Como ver
 - Abra o arquivo "index.html" no navegador, ou acesse o link do GitHub Pages: https://postmalandro.github.io/amicaofweb-fase-1_2/
-- 
+  
 # O projeto possui
 - Cabeçalho com nome do petshop e menu de navegação.
 - Três categorias de produtos (duas opções por categoria) com foto, descrição e valor.
